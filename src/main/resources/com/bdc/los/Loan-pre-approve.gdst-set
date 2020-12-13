@@ -1,0 +1,242 @@
+<graph>
+  <entries>
+    <entry>
+      <pathHead class="org.uberfire.backend.vfs.impl.ObservablePathImpl">
+        <path class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+          <uri>default://master@BDC/test/src/main/resources/com/bdc/los/Age%20Approve.gdst</uri>
+          <fileName>Age Approve.gdst</fileName>
+          <attributes/>
+          <hasVersionSupport>true</hasVersionSupport>
+        </path>
+      </pathHead>
+      <pathVersion class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+        <uri>default://a9a5a5f74a3e399f7ead164ca92be19dbadfc2d5@BDC/test/src/main/resources/com/bdc/los/Age%20Approve.gdst</uri>
+        <fileName>Age Approve.gdst</fileName>
+        <hasVersionSupport>false</hasVersionSupport>
+      </pathVersion>
+      <x>-569.0000000000002</x>
+      <y>464.0</y>
+    </entry>
+    <entry>
+      <pathHead class="org.uberfire.backend.vfs.impl.ObservablePathImpl">
+        <path class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+          <uri>default://master@BDC/test/src/main/resources/com/bdc/los/National%20ID%20Issuance%20Date%20Approve.gdst</uri>
+          <fileName>National ID Issuance Date Approve.gdst</fileName>
+          <attributes/>
+          <hasVersionSupport>true</hasVersionSupport>
+        </path>
+      </pathHead>
+      <pathVersion class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+        <uri>default://8b9d5bd7cdc80787bb7cb3727a7184f9678375c2@BDC/test/src/main/resources/com/bdc/los/National%20ID%20Issuance%20Date%20Approve.gdst</uri>
+        <fileName>National ID Issuance Date Approve.gdst</fileName>
+        <hasVersionSupport>false</hasVersionSupport>
+      </pathVersion>
+      <x>-578.5000000000002</x>
+      <y>5873.8232421875</y>
+    </entry>
+    <entry>
+      <pathHead class="org.uberfire.backend.vfs.impl.ObservablePathImpl">
+        <path class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+          <uri>default://master@BDC/test/src/main/resources/com/bdc/los/Tenor%20Approve.gdst</uri>
+          <fileName>Tenor Approve.gdst</fileName>
+          <attributes/>
+          <hasVersionSupport>true</hasVersionSupport>
+        </path>
+      </pathHead>
+      <pathVersion class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+        <uri>default://2a003f6ac76e194b9f8238f3b018b071442f2c90@BDC/test/src/main/resources/com/bdc/los/Tenor%20Approve.gdst</uri>
+        <fileName>Tenor Approve.gdst</fileName>
+        <hasVersionSupport>false</hasVersionSupport>
+      </pathVersion>
+      <x>-1828.0</x>
+      <y>6393.455810546875</y>
+    </entry>
+    <entry>
+      <pathHead class="org.uberfire.backend.vfs.impl.ObservablePathImpl">
+        <path class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+          <uri>default://master@BDC/test/src/main/resources/com/bdc/los/Finance%20Amount%20Approve.gdst</uri>
+          <fileName>Finance Amount Approve.gdst</fileName>
+          <attributes/>
+          <hasVersionSupport>true</hasVersionSupport>
+        </path>
+      </pathHead>
+      <pathVersion class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+        <uri>default://7c9331fb8a0a693f05f95f4e5d29689c7ea2f2b1@BDC/test/src/main/resources/com/bdc/los/Finance%20Amount%20Approve.gdst</uri>
+        <fileName>Finance Amount Approve.gdst</fileName>
+        <hasVersionSupport>false</hasVersionSupport>
+      </pathVersion>
+      <x>-1552.5000000000002</x>
+      <y>1880.0</y>
+    </entry>
+    <entry>
+      <pathHead class="org.uberfire.backend.vfs.impl.ObservablePathImpl">
+        <path class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+          <uri>default://master@BDC/test/src/main/resources/com/bdc/los/Monthly%20Net%20In%20Come%20Approve.gdst</uri>
+          <fileName>Monthly Net In Come Approve.gdst</fileName>
+          <attributes/>
+          <hasVersionSupport>true</hasVersionSupport>
+        </path>
+      </pathHead>
+      <pathVersion class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+        <uri>default://a7d559ab491802266bb58fc5d41b8442bddbbeb4@BDC/test/src/main/resources/com/bdc/los/Monthly%20Net%20In%20Come%20Approve.gdst</uri>
+        <fileName>Monthly Net In Come Approve.gdst</fileName>
+        <hasVersionSupport>false</hasVersionSupport>
+      </pathVersion>
+      <x>-864.5000000000002</x>
+      <y>4995.29296875</y>
+    </entry>
+    <entry>
+      <pathHead class="org.uberfire.backend.vfs.impl.ObservablePathImpl">
+        <path class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+          <uri>default://master@BDC/test/src/main/resources/com/bdc/los/AuditorsNames.gdst</uri>
+          <fileName>AuditorsNames.gdst</fileName>
+          <attributes/>
+          <hasVersionSupport>true</hasVersionSupport>
+        </path>
+      </pathHead>
+      <pathVersion class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+        <uri>default://5fe78fcebdaad46b53b9135488af950563efb0e2@BDC/test/src/main/resources/com/bdc/los/AuditorsNames.gdst</uri>
+        <fileName>AuditorsNames.gdst</fileName>
+        <hasVersionSupport>false</hasVersionSupport>
+      </pathVersion>
+      <x>-725.5000000000002</x>
+      <y>856.0</y>
+    </entry>
+    <entry>
+      <pathHead class="org.uberfire.backend.vfs.impl.ObservablePathImpl">
+        <path class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+          <uri>default://master@BDC/test/src/main/resources/com/bdc/los/Customer%20Age%20At%20Maturity%20Approve.gdst</uri>
+          <fileName>Customer Age At Maturity Approve.gdst</fileName>
+          <attributes/>
+          <hasVersionSupport>true</hasVersionSupport>
+        </path>
+      </pathHead>
+      <pathVersion class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+        <uri>default://ebe522d306976e0a09cf37049de36d2b43219c98@BDC/test/src/main/resources/com/bdc/los/Customer%20Age%20At%20Maturity%20Approve.gdst</uri>
+        <fileName>Customer Age At Maturity Approve.gdst</fileName>
+        <hasVersionSupport>false</hasVersionSupport>
+      </pathVersion>
+      <x>-736.0000000000002</x>
+      <y>1200.0</y>
+    </entry>
+    <entry>
+      <pathHead class="org.uberfire.backend.vfs.impl.ObservablePathImpl">
+        <path class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+          <uri>default://master@BDC/test/src/main/resources/com/bdc/los/Total%20DBR%20Approve.gdst</uri>
+          <fileName>Total DBR Approve.gdst</fileName>
+          <attributes/>
+          <hasVersionSupport>true</hasVersionSupport>
+        </path>
+      </pathHead>
+      <pathVersion class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+        <uri>default://cdba1067e6bbb31e25350f57a4559a2f2fb2e25c@BDC/test/src/main/resources/com/bdc/los/Total%20DBR%20Approve.gdst</uri>
+        <fileName>Total DBR Approve.gdst</fileName>
+        <hasVersionSupport>false</hasVersionSupport>
+      </pathVersion>
+      <x>-1994.0000000000002</x>
+      <y>-399.0</y>
+    </entry>
+    <entry>
+      <pathHead class="org.uberfire.backend.vfs.impl.ObservablePathImpl">
+        <path class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+          <uri>default://master@BDC/test/src/main/resources/com/bdc/los/Home%20Verification%20Approve.gdst</uri>
+          <fileName>Home Verification Approve.gdst</fileName>
+          <attributes/>
+          <hasVersionSupport>true</hasVersionSupport>
+        </path>
+      </pathHead>
+      <pathVersion class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+        <uri>default://4b2a89e76804f859d3e463120a95f0bd9d8aedee@BDC/test/src/main/resources/com/bdc/los/Home%20Verification%20Approve.gdst</uri>
+        <fileName>Home Verification Approve.gdst</fileName>
+        <hasVersionSupport>false</hasVersionSupport>
+      </pathVersion>
+      <x>-572.0000000000002</x>
+      <y>3654.75</y>
+    </entry>
+    <entry>
+      <pathHead class="org.uberfire.backend.vfs.impl.ObservablePathImpl">
+        <path class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+          <uri>default://master@BDC/test/src/main/resources/com/bdc/los/Business%20Verification%20Approve.gdst</uri>
+          <fileName>Business Verification Approve.gdst</fileName>
+          <attributes/>
+          <hasVersionSupport>true</hasVersionSupport>
+        </path>
+      </pathHead>
+      <pathVersion class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+        <uri>default://2e17f138fd4a5ff4f77425b46a3e0e754cf26229@BDC/test/src/main/resources/com/bdc/los/Business%20Verification%20Approve.gdst</uri>
+        <fileName>Business Verification Approve.gdst</fileName>
+        <hasVersionSupport>false</hasVersionSupport>
+      </pathVersion>
+      <x>-1986.9999999999998</x>
+      <y>-1019.0</y>
+    </entry>
+    <entry>
+      <pathHead class="org.uberfire.backend.vfs.impl.ObservablePathImpl">
+        <path class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+          <uri>default://master@BDC/test/src/main/resources/com/bdc/los/Installment%20Approve.gdst</uri>
+          <fileName>Installment Approve.gdst</fileName>
+          <attributes/>
+          <hasVersionSupport>true</hasVersionSupport>
+        </path>
+      </pathHead>
+      <pathVersion class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+        <uri>default://d0f3ca12143a88a70865a950d0dc9b3db888754c@BDC/test/src/main/resources/com/bdc/los/Installment%20Approve.gdst</uri>
+        <fileName>Installment Approve.gdst</fileName>
+        <hasVersionSupport>false</hasVersionSupport>
+      </pathVersion>
+      <x>-888.5000000000002</x>
+      <y>4104.6875</y>
+    </entry>
+    <entry>
+      <pathHead class="org.uberfire.backend.vfs.impl.ObservablePathImpl">
+        <path class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+          <uri>default://master@BDC/test/src/main/resources/com/bdc/los/Hiring%20Date%20Approve.gdst</uri>
+          <fileName>Hiring Date Approve.gdst</fileName>
+          <attributes/>
+          <hasVersionSupport>true</hasVersionSupport>
+        </path>
+      </pathHead>
+      <pathVersion class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+        <uri>default://5f3fd13aad4f8f2947076f5c5b0eef8a9c5d9cab@BDC/test/src/main/resources/com/bdc/los/Hiring%20Date%20Approve.gdst</uri>
+        <fileName>Hiring Date Approve.gdst</fileName>
+        <hasVersionSupport>false</hasVersionSupport>
+      </pathVersion>
+      <x>-838.0000000000002</x>
+      <y>2775.0</y>
+    </entry>
+    <entry>
+      <pathHead class="org.uberfire.backend.vfs.impl.ObservablePathImpl">
+        <path class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+          <uri>default://master@BDC/test/src/main/resources/com/bdc/los/Loan%20Approve.gdst</uri>
+          <fileName>Loan Approve.gdst</fileName>
+          <attributes/>
+          <hasVersionSupport>true</hasVersionSupport>
+        </path>
+      </pathHead>
+      <pathVersion class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+        <uri>default://77cb368cba4db41d1b724ab2a2c9f9303d5f26fa@BDC/test/src/main/resources/com/bdc/los/Loan%20Approve.gdst</uri>
+        <fileName>Loan Approve.gdst</fileName>
+        <hasVersionSupport>false</hasVersionSupport>
+      </pathVersion>
+      <x>-2027.9999999999998</x>
+      <y>216.0</y>
+    </entry>
+    <entry>
+      <pathHead class="org.uberfire.backend.vfs.impl.ObservablePathImpl">
+        <path class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+          <uri>default://master@BDC/test/src/main/resources/com/bdc/los/Interst%20Rate.gdst</uri>
+          <fileName>Interst Rate.gdst</fileName>
+          <attributes/>
+          <hasVersionSupport>true</hasVersionSupport>
+        </path>
+      </pathHead>
+      <pathVersion class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+        <uri>default://6dc758e73b786abd9f29e3bacf9db276d377b022@BDC/test/src/main/resources/com/bdc/los/Interst%20Rate.gdst</uri>
+        <fileName>Interst Rate.gdst</fileName>
+        <hasVersionSupport>false</hasVersionSupport>
+      </pathVersion>
+      <x>-234.50000000000023</x>
+      <y>4537.171875</y>
+    </entry>
+  </entries>
+</graph>
