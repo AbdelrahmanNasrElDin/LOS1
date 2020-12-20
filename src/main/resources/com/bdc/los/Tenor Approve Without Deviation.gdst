@@ -1,12 +1,12 @@
 <decision-table52>
-  <tableName>Hiring Date Approve</tableName>
+  <tableName>Tenor Approve Without Deviation</tableName>
   <rowNumberCol>
     <hideColumn>false</hideColumn>
     <width>50</width>
   </rowNumberCol>
   <descriptionCol>
     <hideColumn>false</hideColumn>
-    <width>265</width>
+    <width>344</width>
   </descriptionCol>
   <ruleNameColumn>
     <hideColumn>true</hideColumn>
@@ -17,7 +17,7 @@
   <conditionPatterns>
     <Pattern52>
       <factType>Loan</factType>
-      <boundName>f2</boundName>
+      <boundName>f1</boundName>
       <isNegated>false</isNegated>
       <conditions>
         <condition-column52>
@@ -35,18 +35,8 @@
           <operator>==</operator>
           <valueList>914F,701 ,711 ,711F ,711T ,711TV ,726A ,726AS ,726B ,727A ,727B ,727V ,728 ,729 ,730 ,733 ,734 ,736 ,742 ,746 ,750A ,750B ,752 ,786 ,903 ,906 ,909 ,910 ,914 ,914T ,914TV ,915 ,915BS ,917 ,918B ,918S ,919B ,919S ,920 ,921B ,921S ,923B ,923S ,928 ,938 ,938F ,938T ,939A ,939AS ,939B ,940B ,940S ,924S ,924B ,943 ,943T</valueList>
           <parameters/>
+          <binding></binding>
         </condition-column52>
-      </conditions>
-      <window>
-        <parameters/>
-      </window>
-      <entryPointName></entryPointName>
-    </Pattern52>
-    <Pattern52>
-      <factType>Applicant</factType>
-      <boundName>f1</boundName>
-      <isNegated>false</isNegated>
-      <conditions>
         <condition-column52>
           <typedDefaultValue>
             <valueString></valueString>
@@ -54,33 +44,50 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>280</width>
-          <header>Min Hiring Days</header>
+          <width>209</width>
+          <header>Min Tenor</header>
           <constraintValueType>1</constraintValueType>
-          <factField>daysOfHiring</factField>
-          <fieldType>Integer</fieldType>
+          <factField>tenor</factField>
+          <fieldType>Double</fieldType>
           <operator>&gt;=</operator>
-          <valueList>0,1,2,3</valueList>
+          <valueList>6</valueList>
+          <parameters/>
+        </condition-column52>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>329</width>
+          <header>Max Tenor</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>tenor</factField>
+          <fieldType>Double</fieldType>
+          <operator>&lt;=</operator>
+          <valueList>12,60,72,84,120,144</valueList>
           <parameters/>
         </condition-column52>
       </conditions>
       <window>
         <parameters/>
       </window>
+      <entryPointName></entryPointName>
     </Pattern52>
   </conditionPatterns>
   <actionCols>
     <set-field-col52>
       <typedDefaultValue>
         <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
-      <width>281</width>
-      <header>Hiring Date Approve</header>
-      <boundName>f2</boundName>
-      <factField>hiringDateApprove</factField>
+      <width>220</width>
+      <header>Tenor Approve</header>
+      <boundName>f1</boundName>
+      <factField>tenorApprove</factField>
       <type>Boolean</type>
       <update>true</update>
     </set-field-col52>
@@ -133,7 +140,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 701 without Deviation</valueString>
+        <valueString>Case of  product 701</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -143,7 +150,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>84</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -167,7 +179,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 711 without Deviation</valueString>
+        <valueString>Case of  product 711</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -177,7 +189,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>144</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -201,7 +218,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 711F without Deviation</valueString>
+        <valueString>Case of  product 711F</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -211,7 +228,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>144</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -235,7 +257,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 711T without Deviation</valueString>
+        <valueString>Case of  product 711T</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -245,7 +267,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>144</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -269,7 +296,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 711TV without Deviation</valueString>
+        <valueString>Case of  product 711TV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -279,7 +306,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>144</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -303,7 +335,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 726A without Deviation</valueString>
+        <valueString>Case of  product 726A</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -313,7 +345,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>84</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -337,7 +374,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 726AS without Deviation</valueString>
+        <valueString>Case of  product 726AS</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -347,7 +384,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>120</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -371,7 +413,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 726B with Deviation </valueString>
+        <valueString>Case of  product 726B</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -381,7 +423,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>72</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -405,7 +452,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 727A without Deviation</valueString>
+        <valueString>Case of  product 727A</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -415,7 +462,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>60</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -439,7 +491,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 727B without Deviation </valueString>
+        <valueString>Case of  product 727B</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -449,7 +501,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>60</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -473,7 +530,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 727V without Deviation </valueString>
+        <valueString>Case of  product 727V</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -483,7 +540,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>60</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -507,7 +569,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 728 without Deviation </valueString>
+        <valueString>Case of  product 728</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -517,7 +579,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>84</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -541,7 +608,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 729 without  Deviation </valueString>
+        <valueString>Case of  product 729</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -551,7 +618,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>60</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -575,7 +647,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 730 without Deviation</valueString>
+        <valueString>Case of  product 730</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -585,7 +657,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>12</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -609,7 +686,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 733 without Deviation</valueString>
+        <valueString>Case of  product 733</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -619,7 +696,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>84</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -643,7 +725,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 734 without Deviation</valueString>
+        <valueString>Case of  product 734</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -653,7 +735,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>60</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -677,7 +764,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 736 without Deviation</valueString>
+        <valueString>Case of  product 736</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -687,7 +774,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>84</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -711,7 +803,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 742 without Deviation</valueString>
+        <valueString>Case of  product 742</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -721,7 +813,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>60</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -745,7 +842,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 746 without Deviation</valueString>
+        <valueString>Case of  product 746</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -755,7 +852,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>84</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -779,7 +881,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 750A without Deviation</valueString>
+        <valueString>Case of  product 750A</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -789,7 +891,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>84</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -813,7 +920,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 750B without Deviation</valueString>
+        <valueString>Case of  product 750B</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -823,7 +930,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>72</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -847,7 +959,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 752 without Deviation</valueString>
+        <valueString>Case of  product 752</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -857,7 +969,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>84</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -881,7 +998,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 786 without Deviation</valueString>
+        <valueString>Case of  product 786</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -891,7 +1008,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>60</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -915,7 +1037,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 903 without Deviation</valueString>
+        <valueString>Case of  product 903</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -925,7 +1047,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>84</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -949,7 +1076,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 906 without Deviation</valueString>
+        <valueString>Case of  product 906</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -959,7 +1086,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>60</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -983,7 +1115,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 909 without Deviation</valueString>
+        <valueString>Case of  product 909</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -993,7 +1125,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>72</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1017,7 +1154,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 910 without Deviation</valueString>
+        <valueString>Case of  product 910</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1027,7 +1164,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>72</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1051,7 +1193,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 914 without Deviation</valueString>
+        <valueString>Case of  product 914</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1061,7 +1203,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>144</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1085,7 +1232,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 914F  without Deviation</valueString>
+        <valueString>Case of  product 914F</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1095,7 +1242,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>144</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1119,7 +1271,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 914T without Deviation</valueString>
+        <valueString>Case of  product 914T</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1129,7 +1281,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>144</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1153,7 +1310,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 914TV without Deviation</valueString>
+        <valueString>Case of  product 914V</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1163,7 +1320,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>144</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1187,7 +1349,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 915 without Deviation</valueString>
+        <valueString>Case of  product 915</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1197,7 +1359,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>60</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1221,7 +1388,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 915BS without Deviation</valueString>
+        <valueString>Case of  product 915BS</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1231,7 +1398,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>60</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1255,7 +1427,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 917 without Deviation</valueString>
+        <valueString>Case of  product 917</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1265,7 +1437,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>60</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1289,7 +1466,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 918B without Deviation</valueString>
+        <valueString>Case of  product 918B</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1299,7 +1476,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>60</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1323,7 +1505,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 918S without Deviation</valueString>
+        <valueString>Case of  product 918S</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1333,7 +1515,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>60</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1357,7 +1544,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 919B without Deviation</valueString>
+        <valueString>Case of  product 919B</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1367,7 +1554,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>60</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1391,7 +1583,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 919S without Deviation</valueString>
+        <valueString>Case of  product 919S</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1401,7 +1593,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>60</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1425,7 +1622,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 920 without Deviation</valueString>
+        <valueString>Case of  product 920</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1435,7 +1632,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>3</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>72</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1459,7 +1661,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 921B without Deviation</valueString>
+        <valueString>Case of  product 921B</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1469,7 +1671,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>84</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1493,7 +1700,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 921S without Deviation</valueString>
+        <valueString>Case of  product 921S</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1503,7 +1710,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>84</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1527,7 +1739,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 923B without Deviation</valueString>
+        <valueString>Case of  product 923B</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1537,7 +1749,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>72</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1561,7 +1778,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 923S without Deviation</valueString>
+        <valueString>Case of  product 923S</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1571,7 +1788,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>72</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1595,7 +1817,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 924B without Deviation</valueString>
+        <valueString>Case of  product 924B</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1605,7 +1827,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>60</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1629,7 +1856,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 924S without Deviation</valueString>
+        <valueString>Case of  product 924S</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1639,7 +1866,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>60</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1663,7 +1895,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 928 without Deviation</valueString>
+        <valueString>Case of  product 928</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1673,7 +1905,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>84</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1697,7 +1934,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 938 without Deviation</valueString>
+        <valueString>Case of  product 938</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1707,7 +1944,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>144</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1731,7 +1973,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 938F without Deviation</valueString>
+        <valueString>Case of  product 938F</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1741,7 +1983,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>144</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1765,7 +2012,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 938T without Deviation</valueString>
+        <valueString>Case of  product 938T</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1775,7 +2022,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>144</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1799,7 +2051,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 939A without Deviation</valueString>
+        <valueString>Case of  product 939A</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1809,7 +2061,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>84</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1833,7 +2090,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 939S without Deviation</valueString>
+        <valueString>Case of  product 939AS</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1843,7 +2100,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>120</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1867,7 +2129,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 939B without Deviation</valueString>
+        <valueString>Case of  product 939B</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1877,7 +2139,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>72</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1901,7 +2168,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 940B without Deviation</valueString>
+        <valueString>Case of  product 940B</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1911,7 +2178,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>84</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1935,7 +2207,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 940S without Deviation</valueString>
+        <valueString>Case of  product 940S</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1945,7 +2217,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>84</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1969,7 +2246,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 943 without Deviation</valueString>
+        <valueString>Case of  product 934</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1979,7 +2256,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>144</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -2003,7 +2285,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>case of product 943T without Deviation</valueString>
+        <valueString>Case of  product 934T</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -2013,7 +2295,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>144</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>

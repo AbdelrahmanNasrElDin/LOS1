@@ -86,14 +86,14 @@
         <condition-column52>
           <typedDefaultValue>
             <valueString></valueString>
-            <dataType>NUMERIC_INTEGER</dataType>
+            <dataType>STRING</dataType>
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
           <width>455</width>
           <header>Min Request Amount %  compared with  Available Amount </header>
           <constraintValueType>5</constraintValueType>
-          <factField>this.getRequestedAmount()/$param &lt;= this.getAvailableAmount()</factField>
+          <factField>(this.getAvailableAmount()*$param) &lt;= this.getRequestedAmount()</factField>
           <operator>--- please choose ---</operator>
           <parameters/>
         </condition-column52>
@@ -107,14 +107,30 @@
           <width>468</width>
           <header>Max Request Amount %  compared with  Available Amount </header>
           <constraintValueType>5</constraintValueType>
-          <factField>(this.getRequestedAmount()/$param) &lt;= this.getAvailableAmount()</factField>
+          <factField>this.getRequestedAmount() &lt;= this.getAvailableAmount()*$param</factField>
           <operator>--- please choose ---</operator>
+          <parameters/>
+        </condition-column52>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString>&lt;</valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>true</hideColumn>
+          <width>100</width>
+          <header> Pledged Amount</header>
+          <constraintValueType>5</constraintValueType>
+          <factField>this.getPledgedAmount() $param=  this.getAvailableAmount()</factField>
+          <operator>--- please choose ---</operator>
+          <valueList>&lt;</valueList>
           <parameters/>
         </condition-column52>
       </conditions>
       <window>
         <parameters/>
       </window>
+      <entryPointName></entryPointName>
     </Pattern52>
   </conditionPatterns>
   <actionCols>
@@ -212,6 +228,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>&lt;</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueBoolean>true</valueBoolean>
         <valueString></valueString>
         <dataType>BOOLEAN</dataType>
@@ -258,6 +279,11 @@
       </value>
       <value>
         <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>&lt;</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -316,6 +342,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>&lt;</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueBoolean>true</valueBoolean>
         <valueString></valueString>
         <dataType>BOOLEAN</dataType>
@@ -351,7 +382,7 @@
       </value>
       <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[3]/typedDefaultValue"/>
       <value>
-        <valueString></valueString>
+        <valueString>0.9</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -362,6 +393,11 @@
       </value>
       <value>
         <valueString>0.90</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>&lt;</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>

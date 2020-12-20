@@ -1,12 +1,12 @@
 <decision-table52>
-  <tableName>Investigation Date Approve</tableName>
+  <tableName>Total DBR Approve With Deviation</tableName>
   <rowNumberCol>
     <hideColumn>false</hideColumn>
     <width>50</width>
   </rowNumberCol>
   <descriptionCol>
     <hideColumn>false</hideColumn>
-    <width>397</width>
+    <width>319</width>
   </descriptionCol>
   <ruleNameColumn>
     <hideColumn>true</hideColumn>
@@ -27,12 +27,13 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>513</width>
-          <header>Is Investigation Date = Null</header>
+          <width>190</width>
+          <header>Deviation One</header>
           <constraintValueType>1</constraintValueType>
-          <factField>investigationDate</factField>
+          <factField>deviationOne</factField>
           <fieldType>String</fieldType>
-          <operator>== null</operator>
+          <operator>==</operator>
+          <valueList>DBR</valueList>
           <parameters/>
         </condition-column52>
         <condition-column52>
@@ -42,12 +43,13 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>266</width>
-          <header>Min Investigation Days</header>
+          <width>303</width>
+          <header>Deviation Two</header>
           <constraintValueType>1</constraintValueType>
-          <factField>investigationDays</factField>
-          <fieldType>Integer</fieldType>
-          <operator>&gt;=</operator>
+          <factField>deviationTwo</factField>
+          <fieldType>String</fieldType>
+          <operator>==</operator>
+          <valueList>DBR</valueList>
           <parameters/>
         </condition-column52>
         <condition-column52>
@@ -57,18 +59,21 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>253</width>
-          <header>Max Investigation Date</header>
+          <width>279</width>
+          <header>Deviation Three</header>
           <constraintValueType>1</constraintValueType>
-          <factField>investigationDays</factField>
-          <fieldType>Integer</fieldType>
-          <operator>&lt;=</operator>
+          <factField>deviationThree</factField>
+          <fieldType>String</fieldType>
+          <operator>==</operator>
+          <valueList>DBR</valueList>
           <parameters/>
+          <binding></binding>
         </condition-column52>
       </conditions>
       <window>
         <parameters/>
       </window>
+      <entryPointName></entryPointName>
     </Pattern52>
   </conditionPatterns>
   <actionCols>
@@ -79,10 +84,10 @@
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
-      <width>212</width>
-      <header>Investigation Date Approve</header>
+      <width>325</width>
+      <header>Total DBR Approve</header>
       <boundName>f1</boundName>
-      <factField>investigationDateApprove</factField>
+      <factField>totalDBRApprove</factField>
       <type>Boolean</type>
       <update>true</update>
     </set-field-col52>
@@ -135,24 +140,23 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Case of investigation date is null  </valueString>
+        <valueString>case of  Deviation one</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
+        <valueString>DBR</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
         <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
         <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -175,26 +179,62 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Case of investigation date is not null  </valueString>
+        <valueString>case of  Deviation two</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>DBR</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
         <valueString></valueString>
         <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
+    </list>
+    <list>
       <value>
-        <valueNumeric class="int">0</valueNumeric>
+        <valueNumeric class="int">3</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="int">60</valueNumeric>
         <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>case of  Deviation three</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>DBR</valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>

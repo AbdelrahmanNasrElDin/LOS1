@@ -48,16 +48,17 @@
       <conditions>
         <condition-column52>
           <typedDefaultValue>
+            <valueBoolean>false</valueBoolean>
             <valueString></valueString>
-            <dataType>STRING</dataType>
+            <dataType>BOOLEAN</dataType>
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
-          <hideColumn>false</hideColumn>
+          <hideColumn>true</hideColumn>
           <width>100</width>
           <header>productCode</header>
           <constraintValueType>1</constraintValueType>
-          <factField>productCode</factField>
-          <fieldType>String</fieldType>
+          <factField>nationalIDIssuanceDateApprove</factField>
+          <fieldType>Boolean</fieldType>
           <operator>==</operator>
           <valueList></valueList>
           <parameters/>
@@ -134,7 +135,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Case of 7 days </valueString>
+        <valueString>Case Of 7 years</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -144,8 +145,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>914F</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>false</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>

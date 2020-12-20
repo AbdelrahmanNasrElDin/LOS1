@@ -6,7 +6,7 @@
   </rowNumberCol>
   <descriptionCol>
     <hideColumn>false</hideColumn>
-    <width>150</width>
+    <width>402</width>
   </descriptionCol>
   <ruleNameColumn>
     <hideColumn>true</hideColumn>
@@ -77,16 +77,17 @@
       <conditions>
         <condition-column52>
           <typedDefaultValue>
+            <valueBoolean>false</valueBoolean>
             <valueString></valueString>
-            <dataType>STRING</dataType>
+            <dataType>BOOLEAN</dataType>
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
-          <hideColumn>false</hideColumn>
+          <hideColumn>true</hideColumn>
           <width>100</width>
-          <header>Product Code</header>
+          <header>IScore Date</header>
           <constraintValueType>1</constraintValueType>
-          <factField>productCode</factField>
-          <fieldType>String</fieldType>
+          <factField>iscoreDateApprove</factField>
+          <fieldType>Boolean</fieldType>
           <operator>==</operator>
           <parameters/>
           <binding></binding>
@@ -162,7 +163,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>Case of Iscore date is null  </valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -183,8 +184,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>914F</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>false</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -207,7 +209,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>Case of Iscore date is not null  </valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -230,8 +232,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>914F</valueString>
-        <dataType>STRING</dataType>
+        <valueBoolean>false</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
