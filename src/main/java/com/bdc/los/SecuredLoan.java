@@ -16,6 +16,8 @@ public class SecuredLoan implements java.io.Serializable {
 
 	private double availableAmount;
 
+	private java.lang.String rejectionReason;
+
 	public SecuredLoan() {
 	}
 
@@ -67,15 +69,25 @@ public class SecuredLoan implements java.io.Serializable {
 		this.availableAmount = availableAmount;
 	}
 
+	public java.lang.String getRejectionReason() {
+		return this.rejectionReason;
+	}
+
+	public void setRejectionReason(java.lang.String rejectionReason) {
+		this.rejectionReason = rejectionReason;
+	}
+
 	public SecuredLoan(java.lang.String productCode, double requestedAmount,
 			double pledgedAmount, java.lang.String tDCode,
-			boolean securedloansApprove, double availableAmount) {
+			boolean securedloansApprove, double availableAmount,
+			java.lang.String rejectionReason) {
 		this.productCode = productCode;
 		this.requestedAmount = requestedAmount;
 		this.pledgedAmount = pledgedAmount;
 		this.tDCode = tDCode;
 		this.securedloansApprove = securedloansApprove;
 		this.availableAmount = availableAmount;
+		this.rejectionReason = rejectionReason;
 	}
 
 }
