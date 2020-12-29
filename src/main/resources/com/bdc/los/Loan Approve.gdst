@@ -279,7 +279,7 @@
       <boundName>f1</boundName>
       <factField>loanApprove</factField>
       <type>Boolean</type>
-      <update>false</update>
+      <update>true</update>
     </set-field-col52>
   </actionCols>
   <auditLog>
