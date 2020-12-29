@@ -53,6 +53,8 @@ public class Loan implements java.io.Serializable {
 
 	private java.lang.Integer investigationDays;
 
+	private java.lang.String auditorsNames;
+
 	public Loan() {
 	}
 
@@ -226,7 +228,8 @@ public class Loan implements java.io.Serializable {
 		return this.investigationDateApprove;
 	}
 
-	public void setInvestigationDateApprove(java.lang.Boolean investigationDateApprove) {
+	public void setInvestigationDateApprove(
+			java.lang.Boolean investigationDateApprove) {
 		this.investigationDateApprove = investigationDateApprove;
 	}
 
@@ -291,16 +294,22 @@ public class Loan implements java.io.Serializable {
 		}
 	}
 
-
-
 	public java.lang.Integer getInvestigationDays() {
 
-	  return this.investigationDays = getDays(this.investigationDate);
-	
+		return this.investigationDays = getDays(this.investigationDate);
+
 	}
 
 	public void setInvestigationDays(java.lang.Integer investigationDays) {
 		this.investigationDays = investigationDays;
+	}
+
+	public java.lang.String getAuditorsNames() {
+		return this.auditorsNames;
+	}
+
+	public void setAuditorsNames(java.lang.String auditorsNames) {
+		this.auditorsNames = auditorsNames;
 	}
 
 	public Loan(java.lang.String productCode, java.lang.Integer financeAmount,
@@ -323,7 +332,7 @@ public class Loan implements java.io.Serializable {
 			java.lang.Boolean installmentApprove,
 			java.lang.Integer minFinanceAmount,
 			java.text.SimpleDateFormat format,
-			java.lang.Integer investigationDays) {
+			java.lang.Integer investigationDays, java.lang.String auditorsNames) {
 		this.productCode = productCode;
 		this.financeAmount = financeAmount;
 		this.tenor = tenor;
@@ -353,6 +362,7 @@ public class Loan implements java.io.Serializable {
 		this.minFinanceAmount = minFinanceAmount;
 		this.format = format;
 		this.investigationDays = investigationDays;
+		this.auditorsNames = auditorsNames;
 	}
 
 }
