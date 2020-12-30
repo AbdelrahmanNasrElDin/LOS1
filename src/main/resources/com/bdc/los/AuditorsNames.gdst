@@ -50,23 +50,6 @@
           <operator>&lt;=</operator>
           <parameters/>
         </condition-column52>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString>914F</valueString>
-            <dataType>STRING</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>213</width>
-          <header>Product Code</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>productCode</factField>
-          <fieldType>String</fieldType>
-          <operator>==</operator>
-          <valueList>914F ,701 ,711 ,711F ,711T ,711TV ,726A ,726AS ,726B ,727A ,727B ,727V ,728 ,729 ,730 ,733 ,734 ,736 ,742 ,746 ,750A ,750B ,752 ,786 ,903 ,906 ,909 ,910 ,914 ,914T ,914TV ,915 ,915BS ,917 ,918B ,918S ,919B ,919S ,920 ,921B ,921S ,923B ,923S ,928 ,938 ,938F ,938T ,939A ,939AS ,939B ,940B ,940S ,924S ,924B ,943 ,943T</valueList>
-          <parameters/>
-          <binding></binding>
-        </condition-column52>
       </conditions>
       <window>
         <parameters/>
@@ -149,18 +132,13 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="big-int">10000</valueNumeric>
+        <valueNumeric class="big-int">15000</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_BIGINTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>914F</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>&quot;Mohamed.ShakerM,Nada.MR,loan_sup_u2,bpmadmin,reham.Mahmoud&quot;</valueString>
+        <valueString>&quot;Mohamed.ShakerM,Nada.MR,loan_sup_u2,bpmadmin,reham.Mahmoud,loan_sup_u1&quot;</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -183,7 +161,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="big-int">15000</valueNumeric>
+        <valueNumeric class="big-int">15001</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_BIGINTEGER</dataType>
         <isOtherwise>false</isOtherwise>
@@ -195,12 +173,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>914F</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>&quot;Haytham.Anwar,loan_sup_u1&quot;</valueString>
+        <valueString>&quot;Haytham.Anwar,loan_sup_u1,loan_sup_u2&quot;</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -223,24 +196,53 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="big-int">60000</valueNumeric>
+        <valueNumeric class="big-int">50001</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_BIGINTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="big-int">3500000000</valueNumeric>
+        <valueNumeric class="big-int">360000</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_BIGINTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>914F</valueString>
-        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
         <valueString>&quot;reham.Mahmoud,loan_rcr_u1,bpmadmin&quot;</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">4</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="big-int">360001</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGINTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGINTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>&quot;loan_sup_u2,bpmadmin&quot;</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
