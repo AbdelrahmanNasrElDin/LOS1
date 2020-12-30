@@ -69,7 +69,7 @@ public class Applicant implements java.io.Serializable {
 
 	public int getDaysOfHiring() {
 
-		return this.daysOfHiring = getDays(this.hiringDate);
+		return this.daysOfHiring = getYears(this.hiringDate);
 
 	}
 

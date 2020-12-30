@@ -55,7 +55,7 @@
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
           <width>280</width>
-          <header>Min Hiring Days</header>
+          <header>Min Hiring Years</header>
           <constraintValueType>1</constraintValueType>
           <factField>daysOfHiring</factField>
           <fieldType>Integer</fieldType>
