@@ -287,6 +287,34 @@ public class Loan implements java.io.Serializable {
 		}
 	}
 
+	public int getMonths(String date) {
+		try {
+			Date startDate = format.parse(date);
+			String curentDate = format.format(new Date());
+			Date endDate = format.parse(curentDate);
+			long difference_In_Time = endDate.getTime() - startDate.getTime();
+			return (int) (TimeUnit.MILLISECONDS.toDays(difference_In_Time) % 12);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return -1;
+		}
+	}
+
+	public int getYears(String date) {
+		try {
+			Date startDate = format.parse(date);
+			String curentDate = format.format(new Date());
+			Date endDate = format.parse(curentDate);
+			long difference_In_Time = endDate.getTime() - startDate.getTime();
+			long difference_In_Years = TimeUnit.MILLISECONDS
+					.toDays(difference_In_Time) / 365;
+			return (int) difference_In_Years;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return -1;
+		}
+	}
+
 	public java.lang.Integer getInvestigationDays() {
 
 		return this.investigationDays = getDays(this.investigationDate);

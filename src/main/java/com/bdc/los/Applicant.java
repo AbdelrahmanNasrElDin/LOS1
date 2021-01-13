@@ -109,20 +109,30 @@ public class Applicant implements java.io.Serializable {
 		this.name = name;
 	}
 
-	public int days(Date date) {
-		Date curentDate = new Date();
-		long difference_In_Time = curentDate.getTime() - date.getTime();
-		long difference_In_Days = TimeUnit.MILLISECONDS
-				.toDays(difference_In_Time) % 365;
-		return (int) difference_In_Days;
+	public int getDays(String date) {
+		try {
+			Date startDate = format.parse(date);
+			String curentDate = format.format(new Date());
+			Date endDate = format.parse(curentDate);
+			long difference_In_Time = endDate.getTime() - startDate.getTime();
+			return (int) (TimeUnit.MILLISECONDS.toDays(difference_In_Time));
+		} catch (Exception e) {
+			e.printStackTrace();
+			return -1;
+		}
 	}
 
-	public int months(Date date) {
-		Date curentDate = new Date();
-		long difference_In_Time = curentDate.getTime() - date.getTime();
-		long difference_In_Monthes = TimeUnit.MILLISECONDS
-				.toDays(difference_In_Time) % 12;
-		return (int) difference_In_Monthes;
+	public int getMonths(String date) {
+		try {
+			Date startDate = format.parse(date);
+			String curentDate = format.format(new Date());
+			Date endDate = format.parse(curentDate);
+			long difference_In_Time = endDate.getTime() - startDate.getTime();
+			return (int) (TimeUnit.MILLISECONDS.toDays(difference_In_Time) % 12);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return -1;
+		}
 	}
 
 	public int getYears(String date) {
@@ -154,19 +164,6 @@ public class Applicant implements java.io.Serializable {
 
 	public void setIscoreDays(int iscoreDays) {
 		this.iscoreDays = iscoreDays;
-	}
-
-	public int getDays(String date) {
-		try {
-			Date startDate = format.parse(date);
-			String curentDate = format.format(new Date());
-			Date endDate = format.parse(curentDate);
-			long difference_In_Time = endDate.getTime() - startDate.getTime();
-			return (int) (TimeUnit.MILLISECONDS.toDays(difference_In_Time));
-		} catch (Exception e) {
-			e.printStackTrace();
-			return -1;
-		}
 	}
 
 	public java.lang.String getNationalIDIssuanceDate() {
