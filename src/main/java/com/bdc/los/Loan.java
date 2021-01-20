@@ -54,7 +54,6 @@ public class Loan implements java.io.Serializable {
 
 	private java.lang.Integer investigationDays;
 
-	private java.lang.String auditorsNames;
 
 	public Loan() {
 	}
@@ -325,13 +324,6 @@ public class Loan implements java.io.Serializable {
 		this.investigationDays = investigationDays;
 	}
 
-	public java.lang.String getAuditorsNames() {
-		return this.auditorsNames;
-	}
-
-	public void setAuditorsNames(java.lang.String auditorsNames) {
-		this.auditorsNames = auditorsNames;
-	}
 
 	public java.lang.Long getFinanceAmount() {
 		return this.financeAmount;
@@ -361,7 +353,7 @@ public class Loan implements java.io.Serializable {
 			java.lang.Boolean installmentApprove,
 			java.lang.Integer minFinanceAmount,
 			java.text.SimpleDateFormat format,
-			java.lang.Integer investigationDays, java.lang.String auditorsNames) {
+			java.lang.Integer investigationDays) {
 		this.productCode = productCode;
 		this.financeAmount = financeAmount;
 		this.tenor = tenor;
@@ -391,7 +383,6 @@ public class Loan implements java.io.Serializable {
 		this.minFinanceAmount = minFinanceAmount;
 		this.format = format;
 		this.investigationDays = investigationDays;
-		this.auditorsNames = auditorsNames;
 	}
 
 }

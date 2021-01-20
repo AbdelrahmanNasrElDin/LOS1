@@ -49,7 +49,7 @@
           <factField>tDCode</factField>
           <fieldType>String</fieldType>
           <operator>==</operator>
-          <valueList>10</valueList>
+          <valueList>10,20</valueList>
           <parameters/>
           <binding></binding>
         </condition-column52>
@@ -165,7 +165,7 @@
       <boundName>f1</boundName>
       <factField>rejectionReason</factField>
       <type>String</type>
-      <valueList>Pledged Amount is greater than Available Amount , Pledged Amount is less than Requested Amount , Requested Amount is greater than Available Amount , Requested Amount is less than min Requested Amount, Toner is less than Min Toner , Toner is greater than Max Toner</valueList>
+      <valueList>Pledged Amount is greater than Available Amount , Pledged Amount is less than Requested Amount , Requested Amount is greater than Available Amount , Requested Amount is less than min Requested Amount, Tenor is less than Min Tenor , Tenor is greater than Max Tenor</valueList>
       <update>false</update>
     </set-field-col52>
   </actionCols>
@@ -388,7 +388,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Toner is less than Min Toner</valueString>
+        <valueString>Tenor is less than Min Tenor</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -451,7 +451,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Toner is greater than Max Toner</valueString>
+        <valueString>Tenor is greater than Max Tenor</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -479,7 +479,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>10</valueString>
+        <valueString>20</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>

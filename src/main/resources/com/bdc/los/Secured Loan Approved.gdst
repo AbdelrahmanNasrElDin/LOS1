@@ -49,7 +49,7 @@
           <factField>tDCode</factField>
           <fieldType>String</fieldType>
           <operator>==</operator>
-          <valueList>10</valueList>
+          <valueList>10,20</valueList>
           <parameters/>
         </condition-column52>
         <condition-column52>
@@ -65,7 +65,7 @@
           <factField>tDCode</factField>
           <fieldType>String</fieldType>
           <operator>!=</operator>
-          <valueList>10</valueList>
+          <valueList>10,20</valueList>
           <parameters/>
         </condition-column52>
         <condition-column52>
@@ -245,7 +245,11 @@
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[3]/typedDefaultValue"/>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
       <value>
         <valueString>0.90</valueString>
         <dataType>STRING</dataType>
@@ -306,11 +310,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>10</valueString>
+        <valueString>20</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[3]/typedDefaultValue"/>
+      <value reference="../../list/value[6]"/>
       <value>
         <valueString>0.85</valueString>
         <dataType>STRING</dataType>
@@ -376,7 +380,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>10</valueString>
+        <valueString>20</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -444,7 +448,7 @@
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-      <value reference="../../../conditionPatterns/Pattern52/conditions/condition-column52[3]/typedDefaultValue"/>
+      <value reference="../../list/value[6]"/>
       <value>
         <valueString>0.9</valueString>
         <dataType>STRING</dataType>
