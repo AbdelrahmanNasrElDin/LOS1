@@ -22,8 +22,6 @@ public class Loan implements java.io.Serializable {
 
 	private java.lang.Double interestRate;
 
-	private java.lang.String investigationDate;
-
 	private java.lang.Double maximumInstallment;
 
 	private java.lang.Double installment;
@@ -51,10 +49,6 @@ public class Loan implements java.io.Serializable {
 
 	private java.lang.Integer minFinanceAmount;
 	private SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
-
-	private java.lang.Integer investigationDays;
-
-	private double adminFees;
 
 	public Loan() {
 	}
@@ -226,14 +220,6 @@ public class Loan implements java.io.Serializable {
 		this.investigationDateApprove = investigationDateApprove;
 	}
 
-	public java.lang.String getInvestigationDate() {
-		return this.investigationDate;
-	}
-
-	public void setInvestigationDate(java.lang.String investigationDate) {
-		this.investigationDate = investigationDate;
-	}
-
 	public java.lang.Double getMaximumInstallment() {
 		return this.maximumInstallment;
 	}
@@ -315,16 +301,6 @@ public class Loan implements java.io.Serializable {
 		}
 	}
 
-	public java.lang.Integer getInvestigationDays() {
-
-		return this.investigationDays = getDays(this.investigationDate);
-
-	}
-
-	public void setInvestigationDays(java.lang.Integer investigationDays) {
-		this.investigationDays = investigationDays;
-	}
-
 	public java.lang.Long getFinanceAmount() {
 		return this.financeAmount;
 	}
@@ -333,20 +309,12 @@ public class Loan implements java.io.Serializable {
 		this.financeAmount = financeAmount;
 	}
 
-	public double getAdminFees() {
-		return this.adminFees;
-	}
-
-	public void setAdminFees(double adminFees) {
-		this.adminFees = adminFees;
-	}
-
 	public Loan(java.lang.String productCode, java.lang.Long financeAmount,
 			java.lang.Double tenor, java.lang.Double totalDBR,
-			java.lang.Double interestRate, java.lang.String investigationDate,
-			java.lang.Double maximumInstallment, java.lang.Double installment,
-			java.lang.String incomeType, java.lang.String deviationOne,
-			java.lang.String deviationTwo, java.lang.String deviationThree,
+			java.lang.Double interestRate, java.lang.Double maximumInstallment,
+			java.lang.Double installment, java.lang.String incomeType,
+			java.lang.String deviationOne, java.lang.String deviationTwo,
+			java.lang.String deviationThree,
 			java.lang.Boolean dateOfBirthApprove,
 			java.lang.Boolean hiringDateApprove,
 			java.lang.Boolean monthlyNetInComeApprove,
@@ -360,14 +328,12 @@ public class Loan implements java.io.Serializable {
 			java.lang.Boolean investigationDateApprove,
 			java.lang.Boolean installmentApprove,
 			java.lang.Integer minFinanceAmount,
-			java.text.SimpleDateFormat format,
-			java.lang.Integer investigationDays, double adminFees) {
+			java.text.SimpleDateFormat format) {
 		this.productCode = productCode;
 		this.financeAmount = financeAmount;
 		this.tenor = tenor;
 		this.totalDBR = totalDBR;
 		this.interestRate = interestRate;
-		this.investigationDate = investigationDate;
 		this.maximumInstallment = maximumInstallment;
 		this.installment = installment;
 		this.incomeType = incomeType;
@@ -390,8 +356,6 @@ public class Loan implements java.io.Serializable {
 		this.installmentApprove = installmentApprove;
 		this.minFinanceAmount = minFinanceAmount;
 		this.format = format;
-		this.investigationDays = investigationDays;
-		this.adminFees = adminFees;
 	}
 
 }

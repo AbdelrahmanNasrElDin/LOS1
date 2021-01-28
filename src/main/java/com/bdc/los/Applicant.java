@@ -31,6 +31,12 @@ public class Applicant implements java.io.Serializable {
 
 	private int nationalIDIssuanceYears;
 
+	private java.lang.String externalVerification;
+
+	private java.lang.String investigationDate;
+
+	private int investigationDays;
+
 	public Applicant() {
 	}
 
@@ -185,6 +191,32 @@ public class Applicant implements java.io.Serializable {
 		this.nationalIDIssuanceYears = nationalIDIssuanceYears;
 	}
 
+	public java.lang.String getExternalVerification() {
+		return this.externalVerification;
+	}
+
+	public void setExternalVerification(java.lang.String externalVerification) {
+		this.externalVerification = externalVerification;
+	}
+
+	public java.lang.String getInvestigationDate() {
+		return this.investigationDate;
+	}
+
+	public void setInvestigationDate(java.lang.String investigationDate) {
+		this.investigationDate = investigationDate;
+	}
+
+	public java.lang.Integer getInvestigationDays() {
+
+		return this.investigationDays = getDays(this.investigationDate);
+
+	}
+
+	public void setInvestigationDays(java.lang.Integer investigationDays) {
+		this.investigationDays = investigationDays;
+	}
+
 	public Applicant(int age, java.lang.Double ageAtMaturity,
 			java.lang.String businessVerification,
 			java.lang.String dateOFBirth, int daysOfHiring,
@@ -192,7 +224,9 @@ public class Applicant implements java.io.Serializable {
 			java.lang.Double monthlyNetIncome, java.lang.String name,
 			java.lang.String nationalIDIssuanceDate,
 			java.lang.String iscoreDate, java.text.SimpleDateFormat format,
-			int iscoreDays, int nationalIDIssuanceYears) {
+			int iscoreDays, int nationalIDIssuanceYears,
+			java.lang.String externalVerification,
+			java.lang.String investigationDate, int investigationDays) {
 		this.age = age;
 		this.ageAtMaturity = ageAtMaturity;
 		this.businessVerification = businessVerification;
@@ -207,6 +241,9 @@ public class Applicant implements java.io.Serializable {
 		this.format = format;
 		this.iscoreDays = iscoreDays;
 		this.nationalIDIssuanceYears = nationalIDIssuanceYears;
+		this.externalVerification = externalVerification;
+		this.investigationDate = investigationDate;
+		this.investigationDays = investigationDays;
 	}
 
 }
