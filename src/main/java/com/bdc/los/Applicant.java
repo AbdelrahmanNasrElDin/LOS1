@@ -37,6 +37,8 @@ public class Applicant implements java.io.Serializable {
 
 	private int investigationDays;
 
+	private java.lang.String verificationType;
+
 	public Applicant() {
 	}
 
@@ -217,6 +219,14 @@ public class Applicant implements java.io.Serializable {
 		this.investigationDays = investigationDays;
 	}
 
+	public java.lang.String getVerificationType() {
+		return this.verificationType;
+	}
+
+	public void setVerificationType(java.lang.String verificationType) {
+		this.verificationType = verificationType;
+	}
+
 	public Applicant(int age, java.lang.Double ageAtMaturity,
 			java.lang.String businessVerification,
 			java.lang.String dateOFBirth, int daysOfHiring,
@@ -226,7 +236,8 @@ public class Applicant implements java.io.Serializable {
 			java.lang.String iscoreDate, java.text.SimpleDateFormat format,
 			int iscoreDays, int nationalIDIssuanceYears,
 			java.lang.String externalVerification,
-			java.lang.String investigationDate, int investigationDays) {
+			java.lang.String investigationDate, int investigationDays,
+			java.lang.String verificationType) {
 		this.age = age;
 		this.ageAtMaturity = ageAtMaturity;
 		this.businessVerification = businessVerification;
@@ -244,6 +255,7 @@ public class Applicant implements java.io.Serializable {
 		this.externalVerification = externalVerification;
 		this.investigationDate = investigationDate;
 		this.investigationDays = investigationDays;
+		this.verificationType = verificationType;
 	}
 
 }
