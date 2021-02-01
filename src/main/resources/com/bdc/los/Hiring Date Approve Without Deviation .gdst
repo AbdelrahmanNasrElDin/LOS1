@@ -50,17 +50,17 @@
         <condition-column52>
           <typedDefaultValue>
             <valueString></valueString>
-            <dataType>STRING</dataType>
+            <dataType>NUMERIC_DOUBLE</dataType>
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
           <width>280</width>
           <header>Min Hiring Years</header>
           <constraintValueType>1</constraintValueType>
-          <factField>daysOfHiring</factField>
-          <fieldType>Integer</fieldType>
+          <factField>yearsOfHiring</factField>
+          <fieldType>Double</fieldType>
           <operator>&gt;=</operator>
-          <valueList>0,1,2,3</valueList>
+          <valueList></valueList>
           <parameters/>
         </condition-column52>
       </conditions>
@@ -143,8 +143,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -177,8 +178,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -211,8 +213,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -245,8 +248,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -279,8 +283,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -313,8 +318,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -347,8 +353,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -381,8 +388,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -415,8 +423,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -449,8 +458,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -483,8 +493,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -517,8 +528,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -551,8 +563,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">2.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -585,8 +598,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -619,8 +633,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -653,8 +668,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -687,8 +703,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">1.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -721,8 +738,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">1.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -755,8 +773,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">1.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -789,8 +808,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -823,8 +843,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -857,8 +878,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -891,8 +913,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">2.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -925,8 +948,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -959,8 +983,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -993,8 +1018,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1027,8 +1053,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1061,8 +1088,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1095,8 +1123,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1129,8 +1158,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1163,8 +1193,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1197,8 +1228,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">1.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1231,8 +1263,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">1.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1265,8 +1298,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">2.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1299,8 +1333,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1333,8 +1368,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1367,8 +1403,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1401,8 +1438,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1435,8 +1473,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>3</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">3.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1469,8 +1508,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1503,8 +1543,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1537,8 +1578,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1571,8 +1613,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">2.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1605,8 +1648,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1639,8 +1683,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1673,8 +1718,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1707,8 +1753,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1741,8 +1788,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1775,8 +1823,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1809,8 +1858,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1843,8 +1893,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1877,8 +1928,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1911,8 +1963,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">2.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1945,8 +1998,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -1979,8 +2033,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -2013,8 +2068,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="double">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
